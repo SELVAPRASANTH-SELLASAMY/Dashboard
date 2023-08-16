@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 5vmin;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 3.5vmin;
+    text-transform: capitalize;
+}
+body{
+    height: 100vh;
+    background-color:#eceff1;
+    position: fixed;
+}
+.logo{
+    height: 5vmin;
+    width: 5vmin;
+    background-image: url(../assets/IT_logo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    position: fixed;
+    left: 2.5vmin;
+    top: 2.5vmin;
+    cursor: pointer;
+    border: 0.15vmin solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.nav-bar{
+    width: 35vmin;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    left: -35vmin;
+    transition: 500ms;
+}
+.show-nav-bar{
+    left: 0vmin;
+    transition: 500ms;
+}
+.nav-bar .text{
+    height: 7vmin;
+    width: 100%;
+    margin: 2vmin 0vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5vmin;
+    font-size: 2vmin;
+    position: relative;
+}
+.nav-bar .text:hover{
+    background-color:#eceff1;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.hamburger{
+    position: absolute;
+    top: 1vmin;
+    left: 1vmin;
+}
+.nav-bar .menu,.nav-bar .menu2{
+    margin-top: 10vmin;
+    width:85%;
+}
+.nav-bar .menu2{
+    position: absolute;
+    bottom: 0;
+    bottom: 0;
+}
+#home-icon,#dash-icon,#users-icon,#admin-icon,#settings-icon{
+    height: 3vmin;
+    width: 3vmin;
+    margin-right: 1vmin;
+    position: absolute;
+    left: 2.5vmin;
+}
+#dash-icon{
+    margin-top: 1vmin;
+    height: 3.5vmin;
+    width: 3.5vmin;
+}
+#users-icon{
+    margin-top: 0.5vmin;
+    margin-left: 0.5vmin;
+}
+#home-icon{
+    margin-left: 0.5vmin;
+}
+#settings-icon{
+    height: 5vmin;
+    width: 5vmin;
+    margin-top: 1.15vmin;
+}
+#admin-icon{
+    margin-top: 0.5vmin;
+    margin-left: 1vmin;
+}
+.user{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+}
+.user h1{
+    font-size: 4.5vmin;
+    color: #384e58;
+    font-family: 'Poppins', sans-serif;
+}
+#username{
+    margin-left: 1.5vmin;
+}
+#welcome-back{
+    font-size: 4vmin;
+    font-weight: 400;
+    color: #384e58;
+}
+.welcome-message p{
+    color: #7e95a1;
+    font-size: 2vmin;
+}
+.welcome-message{
+    height: 35vmin;
+    width: 40vmin;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    left: 10vmin;
+    top: 16vmin;
+    transition: 500ms;
+}
+.welcome-message-slide{
+    left: 45vmin;
+    transition: 500ms;
+}
+.reactions{
+    position: relative;
+    left: 60vmin;
+    top: 6.5vmin;
+    transition: 500ms;
+    height: fit-content;
+    width: 95vmin;
+    height: 85vmin;
+}
+.reactions-toggle{
+    left: 95vmin;
+    transition: 500ms;
+}
+.reactions .likes,.reactions .love,.reactions .follow{
+    height: 12.5vmin;
+    width: 50vmin;
+    background-color: white;
+    border-radius: 1.5vmin;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5vmin;
+    color: #7e95a1;
+    font-size: 2.15vmin;
+}
+.reactions .likes:hover,.reactions .love:hover,.reactions .follow:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 250ms;
+}
+#thumbs-up,#love,#follow{
+    height: 6.5vmin;
+    width: 6.5vmin;
+}
+.like-icon,.love-icon,.follow-icon{
+    height: 15vmin;
+    width: fit-content;
+    margin-right: 2.5vmin;
+    display: grid;
+    place-items: center;
+}
+.views-count{
+    height: 25vmin;
+    width: 50vmin;
+    background-color: white;
+    text-align: center;
+    border-radius: 1.5vmin;
+    position: absolute;
+    bottom: 0;
+    left: 2.5vmin;
+}
+.views-count:hover{
+    transition: 250ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.views-count p{
+    font-size: 2.5vmin;
+    padding-top:5vmin;
+    color: #7e95a1;
+}
+#wave{
+    border-radius: 1.5vmin;
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.targets{
+    height: 85vmin;
+    width: 40vmin;
+    /* background-color: #7e95a1; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.like-percent,.follow-percent,.revenue-percent{
+    height: 28.35vmin;
+    width: 100%;
+    /* background-color: #c5ccd0; */
+    display: grid;
+    place-items: center;
+}
+.like-percent .roller,.follow-percent .roller,.revenue-percent .roller{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 50%;
+    border: 2vmin solid #2962ff;
+    display: grid;
+    place-items: center;
+}
+.like-percent p,.follow-percent p,.revenue-percent p{
+    font-weight: 600;
+    font-size: 2.5vmin;
+}
+.follow-percent .roller{
+    border-color: #ffc400;
+}
+.revenue-percent .roller{
+    border-color: #ff3d00;
+}
+.like-percent .roller:hover,.follow-percent .roller:hover,.revenue-percent .roller:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 250ms;
+}
